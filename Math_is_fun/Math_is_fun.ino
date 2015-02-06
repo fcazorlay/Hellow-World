@@ -10,37 +10,24 @@
 //******  Variables  ****************************************************
 
 //******  Setup  ********************************************************
-int a = 5;
-int b = 10;
-int c = 20;
+int a = 3;
+int b = 4;
+int h;
 
 void setup()              // run once, when the sketch starts
 {
   Serial.begin(9600);     // set up Serial library at 9600 bps
 
-  Serial.println("Here is some math: ");
+  Serial.println("Lets calculate a hypoteneuse");
 
   Serial.print("a = ");
   Serial.println(a);
   Serial.print("b = ");
   Serial.println(b);
-  Serial.print("c = ");
-  Serial.println(c);
+  Serial.print("h = ");
+  Serial.println(sqrt((a*a)+(b*b)));    //hypoteneuses calculate
 
-  Serial.print("a + b = ");       // add
-  Serial.println(a + b);
 
-  Serial.print("a * c = ");       // multiply
-  Serial.println(a * c);
-  
-  Serial.print("c / b = ");       // divide
-  Serial.println(c / b);
-
-  Serial.print("c % b = ");       // module
-  Serial.println(c % b);
-  
-  Serial.print("b - c = ");       // subtract
-  Serial.println(b - c);
 }
 
 void loop()  // we need this to be here even though its empty
