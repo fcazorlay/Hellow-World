@@ -10,7 +10,7 @@
 //******  Variables  ****************************************************
 
 //******  Setup  ********************************************************
-int tempAigua = 50;
+int tempAigua = 200;
 
 void setup()              // run once, when the sketch starts
 {
@@ -20,7 +20,7 @@ void setup()              // run once, when the sketch starts
   {
     Serial.print("Aigua supera els 100C, esta bullint!");
   }
- else (tempAigua < 100);
+ else 
   {
    Serial.print("Aigua encara no bull");
   }
