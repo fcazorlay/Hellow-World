@@ -23,7 +23,7 @@ void setup()               //run once, when the sketch starts
   Serial.print("Your HD is ");
   Serial.print(drive_gb);
   Serial.println(" GB large.");
-  Serial.print("In theory, it can store")
+  Serial.print("In theory, it can store");
   Serial.println(drive_mb);
   
   drive_mb = drive_gb;
@@ -39,6 +39,7 @@ void setup()               //run once, when the sketch starts
   Serial.print("But it really only stores");
   Serial.print(drive_mb);
   Serial.println(" Megabytes!");
+  
 }
 
 void loop()      //we need this to be here even though its empty
